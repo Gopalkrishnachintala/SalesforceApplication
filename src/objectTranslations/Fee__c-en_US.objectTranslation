@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>fees</value>
+    </caseValues>
+    <fields>
+        <label><!-- Admission fee --></label>
+        <name>Admission_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Fee Payment --></label>
+        <name>Total_Fee_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Term Fee --></label>
+        <name>X1st_Term_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Term fee --></label>
+        <name>X2nd_Term_fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- addition --></label>
+        <name>addition__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

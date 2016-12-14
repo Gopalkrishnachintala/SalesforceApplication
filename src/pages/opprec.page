@@ -1,0 +1,32 @@
+<apex:page controller="opprec" >
+<apex:form >
+<apex:pageMessages >
+</apex:pageMessages>
+  <apex:pageBlock >
+  <apex:pageBlockButtons location="bottom">
+  <apex:commandButton value="Getrecords" action="{!get}"/>
+  </apex:pageBlockButtons>
+  <apex:pageBlockSection >
+  <apex:selectList value="{!seyears}" size="1">
+  Year:<apex:selectOptions value="{!years}">
+   </apex:selectOptions>
+   </apex:selectList>
+   <apex:selectList value="{!months}" size="1">
+   StartDate:<apex:selectOptions value="{!items}">
+   </apex:selectOptions>
+   </apex:selectList>
+   <apex:selectList value="{!months1}" size="1">
+   EndDate:<apex:selectOptions value="{!items}">
+   </apex:selectOptions>
+   </apex:selectList>
+  </apex:pageBlockSection>
+  </apex:pageBlock>
+  </apex:form>
+  <apex:form >
+   <apex:pageBlock >
+   <apex:pageBlockTable value="{!opp1}" var="t">
+   <apex:column value="{!t.name}"/>
+   </apex:pageBlockTable>
+   </apex:pageBlock>
+  </apex:form>
+</apex:page>

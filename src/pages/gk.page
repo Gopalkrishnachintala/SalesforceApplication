@@ -1,0 +1,38 @@
+<apex:page controller="SchemaFieldsCntrl">
+ <apex:form >
+
+ <apex:pageBlock >
+  
+  <apex:outputText value="ObjectName"/>
+  <apex:selectList size="1" value="{!selected}">
+  <apex:selectOptions value="{!options}" />
+  </apex:selectList>
+  <apex:commandButton value="GetFields" action="{!FieldNames}" reRender="SO1"/>
+  <br/><br/>
+  
+  <apex:outputPanel id="SO1">
+  <apex:selectList size="1" value="{!SelPicklist}" rendered="{!SelObjPicklists<>null}">
+  <apex:selectOptions value="{!SelObjPicklists}"/>
+  </apex:selectList>
+  
+   <apex:commandButton value="GetValues" action="{!PickListValues}" rendered="{!SelObjPicklists<>null}" reRender="SO1"/>
+   <br/><br/>
+   
+   
+   
+   <apex:dataTable value="{!lstPickvals}" var="a">
+       <apex:column value="{!a}"/>
+   </apex:dataTable>
+   </apex:outputPanel>
+   <apex:outputPanel >
+   
+   
+   <!--
+  <apex:selectList size="1" >
+  <apex:selectOptions value="{!SelPicklistsvalues}"/>
+  </apex:selectList>
+  -->
+  </apex:outputPanel>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

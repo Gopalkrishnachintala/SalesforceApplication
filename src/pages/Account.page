@@ -1,0 +1,9 @@
+<apex:page >
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:inputText >from Account</apex:inputText>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form> 
+</apex:page>
